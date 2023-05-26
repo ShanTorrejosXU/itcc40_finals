@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shan.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">shan.</a>
+
+    <nav class="navbar">
+      <a href="#" class="nav-link" data-section="home" >About Me</a>
+      <a href="#" class="nav-link" data-section="education" >Xavier University</a>
+      <a href="#" class="nav-link" data-section="hobbies">Hobbies</a>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <div class="section-content">
+      <h1>Hi! I'm Shan Torrejos!</h1>
+      <h4>Computer Science Student</h4>
+      <p>I am a third-year computer science student, aspiring to be a software engineer. A key thing to know about me is that I prioritize three things: good friends, good food, and amazing software. To learn more about my hobbies, educational background, and etc, navigate through the toolbar. Nice meeting you!</p>
+    </div>
+  </section>
+
+  <section id="education" class="sectione">
+    <div class="section-content">
+      <h1>Education background</h1>
+      <h4>XU SHS - COLLEGE</h4>
+      <p>I went to Xavier University - Ateneo de Cagayan for my Senior-Highschool STEM, as well as for my BS Computer Science degree</p>
+    </div>
+  </section>
+
+  <section id="hobbies" class="sectionh">
+      <div class="section-content">
+        <h1>I do painting and games!</h1>
+        <h4>Artist by day, gaming degenerate by night</h4>
+        <p>I'd like to think I'm passionate about art, although I'm not necessarily good at it. I spend a good hour or two sketching or creating digital paintings if the time is free. However,
+          I'm far from the skill level that I aspire to be, but I do hope that micro improvements over the years will amount to something that I can be proud of one day. I mainly draw portraits. 
+        </p>
+
+        <p> <br> I also do a lot of gaming, especially compared to drawing. Perhaps I spend a solid 3-4 hours a day on gaming if I don't have anything important going on. I mostly play multiplayer games for 
+          now like League of Legends and occasionally Valorant and Apex Legends. However, these games are far from my favorite games to play. Singplayer games are the most fun I usually have when gaming. My
+          all time favorite would be Elden Ring, with Witcher 3 being a far second.
+        </p>
+      </div>
+    </section>
+  <script>
+
+    // adds button functionality
+    // adds button functionality
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const targetSection = e.currentTarget.getAttribute('data-section');
+        sections.forEach((section) => {
+          section.style.display = 'none';
+        });
+
+        document.getElementById(targetSection).style.display = 'block';
+      });
+    });
+
+    const aboutMeLink = document.querySelector('.nav-link[data-section="home"]');
+    aboutMeLink.click();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: rgb(29, 29, 29);
+  color:#ededed;
+}
+
+.header {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding: 20px 10%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 40px;
+  color: #f09c00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a{
+  font-size: 20px;
+  color: #f09c00;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .15s
+}
+
+.navbar a:hover{
+  color:#eeff00;
+}
+
+
+.section{
+  height:100vh;
+  display:flex;
+  align-items: center;
+  padding:0 10%;
+  background: url("images/try_lol.png") no-repeat right/cover;
+  background-size: 120%;
+  bottom: 0;
+  padding-top: 300px;
+}
+
+.sectione{
+  height:100vh;
+  display:flex;
+  align-items: center;
+  padding:0 10%;
+  background: url("images/shs.png") no-repeat right/cover;
+  background-size: 120%;
+  bottom: 0;
+  padding-top: 300px;
+}
+
+.sectionh{
+  height:100vh;
+  display:flex;
+  align-items: center;
+  padding:0 10%;
+  background: url("images/malenia.png") no-repeat right/cover;
+  background-size: 120%;
+  bottom: 0;
+  padding-top: 300px;
+}
+
+
+
+.section-content{
+  max-width: 700px;
+}
+
+.section-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section-content h4 {
+  color: #dfab00;
+  font-size: 30px;
+}
+
+.section-content p {
+  font-weight: 300;
+}
+
+.image {
+  width: 700px; 
+  margin-left: auto; 
+}
